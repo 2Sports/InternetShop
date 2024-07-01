@@ -1,64 +1,6 @@
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-    * {
-        font-family: Inter;
-    h1 {
-    color: white;
-    margin: 0;
-    padding: 0;
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}"/>
 
-    }
-    h2 {
-    color: #0077FF
-    }
-    html {
-    background: url('');
-    }
-    }
-    img {
-        max-width: 300px;
-        max-height: 300px;
-    }
-
-    .product {
-        display: flex;
-        border: 2px #0077FF solid;
-        margin-top: 10px;
-        border-radius: 10px;
-        padding: 10px;
-    }
-    .heading {
-        display: flex;
-        align-items: center;
-    }
-
-    a {
-        margin-right: 30px;
-        text-decoration: none;
-        color: black;
-        font-size: 22px;
-
-    }
-    a:hover{
-    color: #0077FF;
-    }
-
-    .logo{
-    background-color: 0077FF;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    }
-    .navigation{
-        margin-left: 100px;
-        margin-right: auto;
-    }
-
-
-
-
-
-</style>
 
 
 
@@ -76,13 +18,18 @@
         <a href="/discounts">Акции</a>
     </div>
 </div>
+<div class="product_List">
 <div class="product">
     <img src="https://goodbox.pro/uploads/goods-images/22522646e3df1343675b32c4cd7c28b6.webp">
     <div>
         <h2>Моноколесо</h2>
         <p>Откройте новые горизонты с моноколесом - инновационным средством передвижения, которое дарит невероятные приключения и свободу. Ощутите ветер в волосах, будьте уникальными, выберите моноколесо для ярких моментов каждый день.</p>
     </div>
-    <button>Купить</button>
+
+    <div class="priceSection">
+        <h3>19 900 ₽</h3>
+        <button>Купить</button>
+    </div>
 </div>
 
 <div class="product">
@@ -91,5 +38,11 @@
         <h2>Смарт часы</h2>
         <p>Освойте мир умных технологий с смарт-часами! Поддерживайте связь, следите за фитнесом, ориентируйтесь на GPS - все это в стильном и функциональном устройстве. Сделайте свою жизнь проще и удобнее с смарт-часами!</p>
     </div>
-    <button>Купить</button>
+    <div class="priceSection">
+        <h3>19 900 ₽</h3>
+        <button>Купить</button>
+    </div>
+
 </div>
+</div>
+
